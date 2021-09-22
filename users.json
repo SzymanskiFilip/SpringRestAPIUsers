@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Khabib",
+    "lastName": "Nurmagomedov"
+  },
+  {
+    "id": 2,
+    "name": "Mike",
+    "lastName": "Tyson"
+  },
+  {
+    "id": 3,
+    "name": "Jon",
+    "lastName": "Jones"
+  },
+  {
+    "id": 4,
+    "name": "Jan",
+    "lastName": "Blachowicz"
+  }
+]
