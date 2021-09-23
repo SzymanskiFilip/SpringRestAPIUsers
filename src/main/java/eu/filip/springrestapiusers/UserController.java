@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -23,7 +24,7 @@ public class UserController {
     }
 
     @GetMapping("/user/{id}")
-    public int user(@PathVariable Long id) throws IOException {
-        return id.intValue();
+    public User user(@PathVariable Long id) throws IOException {
+        return JSONReader.getUserFromId(id.intValue());
     }
 }
