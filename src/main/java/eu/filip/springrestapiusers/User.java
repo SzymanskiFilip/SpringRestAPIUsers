@@ -1,10 +1,16 @@
 package eu.filip.springrestapiusers;
 
+
 public class User {
     private final long id;
 
     private String name;
     private String lastName;
+
+    public User(){
+        this.id = 0;
+    }
+
 
     public User(long id, String name, String lastName) {
         this.id = id;
