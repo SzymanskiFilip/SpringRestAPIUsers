@@ -1,6 +1,7 @@
 package eu.filip.springrestapiusers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,4 +22,8 @@ public class UserController {
         return JSONReader.readUsersFromFile();
     }
 
+    @GetMapping("/user/{id}")
+    public int user(@PathVariable Long id) throws IOException {
+        return id.intValue();
+    }
 }
